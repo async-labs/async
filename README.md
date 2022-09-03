@@ -230,7 +230,7 @@ Chat for synchronous, urgent communication:<br>
 <kbd>![chat-desktop](https://d2c24pn6pcl4ug.cloudfront.net/images/chat-desktop.png)</kbd>
 
 Chat on mobile browser:<br>
-<kbd>![chat-mobile](https://d2c24pn6pcl4ug.cloudfront.net/images/chat-mobile.jpeg)</kbd>
+<kbd><img height="700" src=https://d2c24pn6pcl4ug.cloudfront.net/images/chat-mobile.jpeg>
 
 Discussion for asynchronous, non-urgent communication:
 <kbd>![discussion](https://d2c24pn6pcl4ug.cloudfront.net/images/discussions.png)</kbd>
