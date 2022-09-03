@@ -226,9 +226,29 @@ To customize styles, check [this guide](https://github.com/async-labs/builderboo
 
 ## Screenshots
 
-https://async-await.com
+Chat for synchronous, urgent communication:<br>
+<kbd>![chat-desktop](https://d2c24pn6pcl4ug.cloudfront.net/images/chat-desktop.png)</kbd>
 
-More screenshots
+Chat on mobile browser:<br>
+<kbd>![chat-mobile](https://d2c24pn6pcl4ug.cloudfront.net/images/chat-mobile.jpeg)</kbd>
+
+Discussion for asynchronous, non-urgent communication:
+<kbd>![discussion](https://d2c24pn6pcl4ug.cloudfront.net/images/discussions.png)</kbd>
+
+Discussions consist of Comments, where you can write with Markdown, preview your content, and include attachments.
+<kbd>![comment](https://d2c24pn6pcl4ug.cloudfront.net/images/comment.png)</kbd>
+
+Multiple team management demonstrated by team switcher:
+<kbd>![team-switcher](https://d2c24pn6pcl4ug.cloudfront.net/images/teamswitcher2.png)</kbd>
+
+User settings:
+<kbd>![user-settings](https://d2c24pn6pcl4ug.cloudfront.net/images/account-settings.png)</kbd>
+
+Team settings:
+<kbd>![team-settings](https://d2c24pn6pcl4ug.cloudfront.net/images/team-settings.png)</kbd>
+
+Billing:
+<kbd>![billing](https://d2c24pn6pcl4ug.cloudfront.net/images/billing.png)</kbd>
 
 
 ## Contributing
