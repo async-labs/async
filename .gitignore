@@ -1,0 +1,17 @@
+.vscode/
+now.json
+node_modules
+production-server
+/start.sh
+/start-projects.sh
+
+.env
+.next
+
+
+edit to trigger redeploy
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

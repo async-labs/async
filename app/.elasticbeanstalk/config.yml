@@ -1,0 +1,19 @@
+branch-defaults:
+  default:
+    environment: app-async-env-c6gd
+environment-defaults:
+  app-async-env-c6gd:
+    branch: null
+    repository: null
+global:
+  application_name: api-async-app-c6gd
+  default_ec2_keyname: null
+  default_platform: Node.js 14 running on 64bit Amazon Linux 2
+  default_region: us-west-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  sc: null
+  workspace_type: Application
