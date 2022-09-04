@@ -2,9 +2,9 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
 import he from 'he';
-import * as hljs from 'highlight.js';
+import hljs from 'highlight.js';
 
-import marked from 'marked';
+import { marked } from 'marked';
 import { runInAction } from 'mobx';
 import { observer } from 'mobx-react';
 import moment from 'moment';

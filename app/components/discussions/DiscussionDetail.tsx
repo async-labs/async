@@ -690,7 +690,6 @@ class DiscussionDetail extends React.Component<Props, State> {
           });
 
           notify(`You deleted discussion: '${this.props.discussion.discussionName}'.`);
-
         } catch (error) {
           console.error(error);
           notify(error);

@@ -5,13 +5,14 @@ Support Ukraine: [link](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkri
 
 ## Async
 
-
+Open source team web application communication web application with two main features. Discussions for async communication and Chats for sync communication.
 
 
 ## Live demo:
 
 - APP: https://1.async-await.com
 - API: https://api-xphxggip.async-await.com
+
 
 ## Sponsors
 
@@ -30,6 +31,7 @@ Support Ukraine: [link](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkri
 - [Showcase](#showcase)
 - [Contributing](#contributing)
 - [Team](#team)
+
 
 ## Features
 

@@ -1,6 +1,6 @@
-import sendEmail from './api/aws-ses';
-import getEmailTemplate, { EmailTemplate } from './api/models/EmailTemplate';
-import User from './api/models/User';
+import sendEmail from '../api/server/aws-ses';
+import getEmailTemplate, { EmailTemplate } from '../api/server/models/EmailTemplate';
+import User from '../api/server/models/User';
 
 async function checkCardExpiration(productionUrl: string) {
   const now = new Date();
@@ -52,7 +52,7 @@ async function checkCardExpiration(productionUrl: string) {
 
         await sendEmail({
           from: `From async-await.com <${process.env.EMAIL_ADDRESS_FOR_SES}>`,
-          to: [user.emailAtApi],
+          to: [user.email],
           subject: template.subject,
           body: template.message,
         });
@@ -76,7 +76,7 @@ async function checkCardExpiration(productionUrl: string) {
 
         await sendEmail({
           from: `From async-await.com <${process.env.EMAIL_ADDRESS_FOR_SES}>`,
-          to: [user.emailAtApi],
+          to: [user.email],
           subject: template.subject,
           body: template.message,
         });

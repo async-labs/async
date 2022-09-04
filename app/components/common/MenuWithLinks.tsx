@@ -11,6 +11,7 @@ type Props = {
   selected?: boolean;
   showDarkTheme?: boolean;
   isMobile?: boolean;
+  children: any;
 };
 
 class MenuWithLinks extends React.PureComponent<Props> {

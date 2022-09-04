@@ -1,14 +1,14 @@
 import TextField from '@mui/material/TextField';
 
 import he from 'he';
-import * as hljs from 'highlight.js';
+import hljs from 'highlight.js';
 import { throttle } from 'lodash';
 
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import IconButton from '@mui/material/IconButton';
 import SendIcon from '@mui/icons-material/Send';
 
-import marked from 'marked';
+import { marked } from 'marked';
 import { runInAction } from 'mobx';
 import { observer } from 'mobx-react';
 import moment from 'moment';

@@ -331,7 +331,7 @@ class CommentClass extends mongoose.Model {
 
     const discussion = await Discussion.findById(discussionId).setOptions({ lean: true });
 
-    logger.debug(discussion.teamId, typeof discussion.teamId);
+    // logger.debug(discussion.teamId, typeof discussion.teamId);
 
     const teamLeader = await User.findOne({
       'teamsForTeamLeader.teamId': discussion.teamId,

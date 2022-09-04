@@ -64,7 +64,6 @@ class ChatPage extends React.Component<Props, State> {
 
     const { showFormForNewChat } = this.state;
 
-
     if (showFormForNewChat) {
       return (
         <Layout {...this.props}>
