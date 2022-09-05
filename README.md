@@ -289,14 +289,6 @@ All code in this repository is provided under the [MIT License](https://github.c
 ## Project structure
 
 ```
-├── .elasticbeanstalk
-│   └── config.yml
-├── .github
-│   └── FUNDING.yml
-├── .vscode
-│   ├── extensions.json
-│   ├── launch.json
-│   └── settings.json
 ├── api
 │   ├── .elasticbeanstalk
 │   │   └── config.yml
@@ -307,115 +299,131 @@ All code in this repository is provided under the [MIT License](https://github.c
 │   │   │   ├── team-leader.ts
 │   │   │   └── team-member.ts
 │   │   ├── models
+│   │   │   ├── Chat.ts
+│   │   │   ├── Comment.ts
 │   │   │   ├── Discussion.ts
 │   │   │   ├── EmailTemplate.ts
-│   │   │   ├── Invitation.ts
-│   │   │   ├── Post.ts
-│   │   │   ├── Team.ts
+│   │   │   ├── Message.ts
 │   │   │   └── User.ts
 │   │   ├── utils
-│   │   │   ├── slugify.ts
-│   │   │   └── sum.ts
+│   │   │   ├── markdownToHtml.ts
+│   │   │   └── slugify.ts
 │   │   ├── aws-s3.ts
 │   │   ├── aws-ses.ts
-│   │   ├── google-auth.ts
-│   │   ├── logger.ts
-│   │   ├── mailchimp.ts
-│   │   ├── passwordless-auth.ts
-│   │   ├── passwordless-token-mongostore.ts
+│   │   ├── logs.ts
+│   │   ├── passwordless-token.ts
+│   │   ├── passwordless-toenstore.ts
+│   │   ├── passwordless.ts
+│   │   ├── robots.txt
 │   │   ├── server.ts
 │   │   ├── sockets.ts
 │   │   └── stripe.ts
-│   ├── static
-│   │   └── robots.txt
-│   ├── test/server/utils
-│   │   ├── slugify.test.ts
-│   │   └── sum.test.ts
-│   ├── .eslintignore
 │   ├── .eslintrc.js
 │   ├── .gitignore
+│   ├── nodemon.json
 │   ├── package.json
 │   ├── tsconfig.json
-│   ├── tsconfig.server.json
 │   └── yarn.lock
 ├── app
 │   ├── .elasticbeanstalk
 │   │   └── config.yml
 │   ├── components
+│   │   ├── chats
+│   │   │   ├── ChatDetail.tsx
+│   │   │   ├── ChatList.tsx
+│   │   │   └── SearchWithinChat.tsx
+│   │   ├── comments
+│   │   │   ├── CommentContext.tsx
+│   │   │   ├── CommentDetail.tsx
+│   │   │   ├── CommentEditor.tsx
+│   │   │   └── CommentForm.tsx
 │   │   ├── common
+│   │   │   ├── AvatarwithMenu.tsx
 │   │   │   ├── Confirmer.tsx
-│   │   │   ├── LoginButton.tsx
+│   │   │   ├── Loading.tsx
+│   │   │   ├── LoginForm.tsx
 │   │   │   ├── MemberChooser.tsx
 │   │   │   ├── MenuWithLinks.tsx
 │   │   │   ├── MenuWithMenuItems.tsx
-│   │   │   └── Notifier.tsx
+│   │   │   ├── Notifier.tsx
+│   │   │   └── SidebarListItem.tsx
 │   │   ├── discussions
-│   │   │   ├── CreateDiscussionForm.tsx
-│   │   │   ├── DiscussionActionMenu.tsx
+│   │   │   ├── DiscussionDetail.tsx
 │   │   │   ├── DiscussionList.tsx
-│   │   │   ├── DiscussionListItem.tsx
-│   │   │   └── EditDiscussionForm.tsx
+│   │   │   └── SearchDiscussions.tsx
 │   │   ├── layout
 │   │   │   ├── index.tsx
-│   │   ├── posts
-│   │   │   ├── PostContent.tsx
-│   │   │   ├── PostDetail.tsx
-│   │   │   ├── PostEditor.tsx
-│   │   │   └── PostForm.tsx
+│   │   │   └── menu.ts
+│   │   ├── messages
+│   │   │   ├── MessageContent.tsx
+│   │   │   ├── MessageDetail.tsx
+│   │   │   ├── MessageEditor.tsx
+│   │   │   └── MessageForm.tsx
+│   │   ├── settings
+│   │   │   └── SettingsMenu.tsx
 │   │   ├── teams
-│   │   │   └── InviteMember.tsx
+│   │   │   ├── CreateTeamModal.tsx
+│   │   │   └── InviteMemberModal.tsx
 │   ├── lib
 │   │   ├── api
 │   │   │   ├── makeQueryString.ts
-│   │   │   ├── public.ts
 │   │   │   ├── sendRequestAndGetResponse.ts
-│   │   │   ├── team-leader.ts
-│   │   │   └── team-member.ts
+│   │   │   ├── to-api-server-public.ts
+│   │   │   ├── to-api-server-team-leader.ts
+│   │   │   ├── to-api-server-team-member.ts
+│   │   │   └── to-external-services.ts
 │   │   ├── store
-│   │   │   ├── discussion.ts
-│   │   │   ├── index.ts
-│   │   │   ├── invitation.ts
-│   │   │   ├── post.ts
-│   │   │   ├── team.ts
-│   │   │   └── user.ts
+│   │   │   ├── Chatts
+│   │   │   ├── Comment.ts
+│   │   │   ├── Discussion.ts
+│   │   │   ├── Message.ts
+│   │   │   ├── Team.ts
+│   │   │   ├── User.ts
+│   │   │   └── index.ts
 │   │   ├── confirm.ts
+│   │   ├── highlightSearchResult.ts
 │   │   ├── isMobile.ts
 │   │   ├── notify.ts
 │   │   ├── resizeImage.ts
 │   │   ├── sharedStyles.ts
-│   │   ├── theme.ts
-│   │   └── withAuth.tsx
+│   │   └── theme.ts
 │   ├── pages
+│   │   ├── public
+│   │   │   ├── login.tsx
+│   │   │   └── register.tsx
+│   │   ├── settings
+│   │   │   ├── my-account.tsx
+│   │   │   ├── my-billing.tsx
+│   │   │   └── team-settings.tsx
 │   │   ├── _app.tsx
 │   │   ├── _document.tsx
-│   │   ├── billing.tsx
-│   │   ├── create-team.tsx
-│   │   ├── discussion.tsx
-│   │   ├── invitation.tsx
-│   │   ├── login-cached.tsx
-│   │   ├── login.tsx
-│   │   ├── team-settings.tsx
-│   │   └── your-settings.tsx
-│   ├── public
-│   │   └── pepe.jpg
+│   │   ├── chat.tsx
+│   │   └── discussion.tsx
+│   ├── public/fonts
+│   │   ├── IBM-Plex-Mono
+│   │   │   ├── IBMPlexMono-Regular.woff
+│   │   │   └── IBMPlexMono-Regular.woff2
+│   │   ├── Roboto
+│   │   │   ├── Roboto-Regular.woff
+│   │   │   └── Roboto-Regular.woff2
+│   │   ├── cdn.css
+│   │   └── server.css
 │   ├── server
-│   │   ├── robots.txt
-│   │   ├── routesWithCache.ts
-│   │   ├── server.ts
-│   │   └── setupSitemapAndRobots.ts
+│   │   └── server.ts
 │   ├── .babelrc
 │   ├── .eslintignore
 │   ├── .eslintrc.js
 │   ├── .gitignore
-│   ├── next.env.d.ts
+│   ├── next-env.d.ts
 │   ├── next.config.js
+│   ├── nodemon.json
 │   ├── package.json
 │   ├── tsconfig.json
 │   ├── tsconfig.server.json
 │   └── yarn.lock
-├── book
 ├── lambda
-│   ├── .estlintignore
+│   ├── src
+│   │   └── checkCardExpiration.ts
 │   ├── .eslintrc.js
 │   ├── .gitignore
 │   ├── api
@@ -423,10 +431,9 @@ All code in this repository is provided under the [MIT License](https://github.c
 │   ├── package.json
 │   ├── serverless.yml
 │   ├── tsconfig.json
+│   ├── tslint.json
 │   └── yarn.lock
 ├── .gitignore
 ├── LICENSE.md
 ├── README.md
-├── package.json
-├── yarn.lock
 ```
