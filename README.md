@@ -11,13 +11,13 @@ README - work in progress
 
 ## Async
 
-Open source web app for team + client communication.
+Open source SaaS web app.
 
-Async comes with many basic SaaS web app features (see Features below). In addition, the major features of Async are: (1) Chat for real-time, synchronous communication, (2) Discussions for asynchronous communication, (3) multi team/project management.
+Async's main features are: (1) Chat for real-time, synchronous communication, (2) Discussions for asynchronous communication, (3) multi team/project management.
 
-Async was built from our popular open source [SaaS boilerplate](https://github.com/async-labs/saas). We built Async for communication within our internal team and with our clients. By separating synchronous (urgent) vs. asynchronous (non-urgent) conversations, we minimized distractions. Our team knows when a conversation needs immediate attention or can wait for uninterrupted, deep thinking.
+Async was built from our popular open source [SaaS boilerplate](https://github.com/async-labs/saas). We built Async for communication within our internal team and with our clients. By separating synchronous (urgent) vs. asynchronous (non-urgent) conversations, we minimized distractions. Your team already knows when a conversation needs immediate attention or can wait for uninterrupted, deep thinking. Async helps separate conversations into urgent and non-urgent.
 
-You can use Async as an in-house, self-hosted communication app for your team and or with clients. You can also use Async as a starting point for building a more complex SaaS web application that includes communication features.
+You can use Async as a self-hosted communication app for your team. You can also use Async as a starting point for building a more complex SaaS web application.
 
 
 ## Live demo:
