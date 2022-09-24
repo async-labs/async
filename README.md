@@ -46,14 +46,16 @@ You can use Async as a self-hosted communication app for your team. You can also
 
 ## Features
 
-- Server-side rendering for [fast initial load and SEO](https://async-await.com/article/server-side-vs-client-side-rendering-in-react-apps).
-- User authentication with Google OAuth API and Passwordless, cookie, and session.
+- Chat for real-time, synchronous communication
+- Discussions for long-form, asynchronous communication
+- Team creation, Team Member invitation, and settings for Team and User.
+- Server-side rendering for fast initial load and SEO.
+- User authentication with Passwordless, cookie, and session.
 - Production-ready Express server with compression, parser, and helmet.
 - Transactional emails (`AWS SES`): welcome, team invitation, and payment.
 - Adding email addresses to newsletter lists (`Mailchimp`): new users, paying users.
 - File upload, load, and deletion (`AWS S3`) with pre-signed request for: Posts, Team Profile, and User Profile.
 - Websockets with socket.io v3.
-- Team creation, Team Member invitation, and settings for Team and User.
 - Opinionated architecture:
   - keeping babel and webpack configurations under the hood,
   - striving to minimize number of configurations,
@@ -68,7 +70,6 @@ You can use Async as a self-hosted communication app for your team. You can also
 - Production-ready, scalable architecture:
   - `app` - user-facing web app with Next/Express server, responsible for rendering pages (either client-side or server-side rendered). `app` sends requests via API methods to `api` Express server.
   - `api` - server-only code, Express server, responsible for processing requests for internal and external API infrastructures.
-  - we prepared both apps for easy deployment to `now` by vercel.
 - **Subscriptions with `Stripe`**:
   - subscribe/unsubscribe Team to plan,
   - update card information,
@@ -269,7 +270,7 @@ Billing:
 
 ## Contributing
 
-Want to support this project? Consider buying our [books](https://builderbook.org/). If you represent company, consider becoming a recurring sponsor for this repo. Our two most popular repos get >1000 unique visitor per week, mostly comprised of people who are building their SaaS web applications.
+Want to support this project? Consider buying our [books](https://builderbook.org/).
 
 
 ## Team
@@ -277,7 +278,7 @@ Want to support this project? Consider buying our [books](https://builderbook.or
 - [Kelly Burke](https://github.com/klyburke)
 - [Timur Zhiyentayev](https://github.com/tima101)
 
-You can contact us at team@builderbook.org
+You can contact us at team@async-labs.com.
 
 If you are interested in working with us, check out [Async Labs](https://async-labs.com/).
 
