@@ -1,10 +1,6 @@
 ![image](https://user-images.githubusercontent.com/26158226/155850630-137ae3be-aa29-487b-a422-e8fb4db634dc.png)
 
-Support Ukraine: [link](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
-
-------------
-
-README - work in progress
+Support Ukraine: [link 1](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi), [link 2](https://prytulafoundation.org/en)
 
 ------------
 
@@ -13,11 +9,11 @@ README - work in progress
 
 Open source SaaS web app.
 
-Async's main features are: (1) Chat for real-time, synchronous communication, (2) Discussions for asynchronous communication, (3) multi team/project management.
+Async's main features are: (1) Chat for real-time, synchronous communication, (2) Discussions for asynchronous communication, (3) All communication (chats + discussions) can be organized by team.
 
-Async was built from our popular open source [SaaS boilerplate](https://github.com/async-labs/saas). We built Async for communication within our internal team and with our clients. By separating synchronous (urgent) vs. asynchronous (non-urgent) conversations, we minimized distractions. Your team already knows when a conversation needs immediate attention or can wait for uninterrupted, deep thinking. Async helps separate conversations into urgent and non-urgent.
+Async was built from our popular open source [SaaS boilerplate](https://github.com/async-labs/saas). We built Async for communication within our internal team and with our clients from custom dev business. By separating synchronous (urgent) vs. asynchronous (non-urgent) conversations, we minimized distractions while working on big tasks while still reacting to urgent requests.
 
-You can use Async as a self-hosted communication app for your team. You can also use Async as a starting point for building a more complex SaaS web application.
+You can use Async as a self-hosted communication web app for your team. You can also use Async as a starting point for building a more complex SaaS web application.
 
 
 ## Live demo:
