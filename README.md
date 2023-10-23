@@ -15,6 +15,14 @@ Async was built from our popular open source [SaaS boilerplate](https://github.c
 
 You can use Async as a self-hosted communication web app for your team. You can also use Async as a starting point for building a more complex SaaS web application.
 
+Other projects that we built:
+- [Builder Book](https://builderbook.org) - learn how to build full-stack web apps from scratch
+- [SaaS Boilerplate](https://github.com/async-labs/saas) - open source web app to build your own SaaS product
+- [Async](https://async-await.com) - open source urgent vs non-urgent team communication tool for small teams
+- [Work in biotech](https://workinbiotech.com) - job board for biotech startup companies
+- [AI-cruiter](https://workinbiotech.com/ai-cruiter) - browser extension is built for recruiters managing a high volume of job applicants. AI-cruiter uses LLMs - like ChatGPT, PaLM 2, our private fine-tuned LLM - to generate succinct and relevant summaries of your job applicants' resumes
+- [Async Labs](https://async-labs.com) - many custom dev projects
+
 
 ## Live demo:
 
